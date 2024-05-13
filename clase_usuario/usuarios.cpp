@@ -167,6 +167,7 @@ void usuario::creararchivousuarios()
 			throw std::runtime_error("No se pudo abrir el usuarios.csv para escritura");
 		}
 		SaveFile << "Id,Nombre,Apellido,Usuario,Password,Rol" << endl;
+		SaveFile << "1,Admin,Admin,Admin,Admin,4" << endl;
 		SaveFile.close();
 	}
 	catch (const std::exception& e)
